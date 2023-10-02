@@ -8,5 +8,27 @@
 
 -e file:.
 asgiref==3.7.2
+black==23.9.1
+cfgv==3.4.0
+click==8.1.7
+distlib==0.3.7
 django==4.2.5
+filelock==3.12.4
+flake8==6.1.0
+identify==2.5.30
+mccabe==0.7.0
+mypy==1.5.1
+mypy-extensions==1.0.0
+nodeenv==1.8.0
+packaging==23.2
+pathspec==0.11.2
+platformdirs==3.10.0
+pre-commit==3.4.0
+pycodestyle==2.11.0
+pyflakes==3.1.0
+pyyaml==6.0.1
 sqlparse==0.4.4
+typing-extensions==4.8.0
+virtualenv==20.24.5
+# The following packages are considered to be unsafe in a requirements file:
+setuptools==68.2.2
