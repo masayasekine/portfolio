@@ -4,19 +4,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Masaya Sekine</title>
+    <title>{% block title %}Masaya Sekine{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'styles.css' %}" />
   </head>
   <body>
-    <div id="home">
-      <h1>Masaya Sekine</h1>
-      <p>software engineer</p>
+    <header>
+      <nav>
+        <h1><a href="/">Masaya Sekine</a></h1>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/#">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>{% block content %} {% endblock %}</main>
+
+    <footer>
       <nav>
         <ul>
           <li><a href="/about">About</a></li>
           <li><a href="/#">Blog</a></li>
         </ul>
       </nav>
-    </div>
+    </footer>
   </body>
 </html>
