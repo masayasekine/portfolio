@@ -1,5 +1,14 @@
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+p {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Roboto Slab", serif;
 }
 
 a {
@@ -44,6 +53,7 @@ header nav h1 {
   font-weight: 700;
   letter-spacing: 4px;
   margin: 0;
+  align-items: flex-end;
 }
 
 header nav ul {
@@ -56,6 +66,7 @@ header nav ul li {
   text-align: center;
   margin: 0 10px;
   display: inline-block;
+  align-items: flex-end;
 }
 
 @media screen and (min-width: 768px) {
@@ -74,6 +85,30 @@ header nav ul li {
   }
 }
 
+/* footer */
+footer {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer nav {
+  width: 100%;
+  display: flex;
+}
+
+footer nav ul {
+  width: 100%;
+  margin: auto;
+}
+
+footer nav ul li {
+  text-align: center;
+  margin: 0 30px;
+  display: inline-block;
+}
+
 /* home */
 #home {
   text-align: center;
@@ -82,7 +117,12 @@ header nav ul li {
   font-size: 42px;
   font-weight: 700;
   letter-spacing: 8px;
-  padding-top: 200px;
+  padding: 200px 0px 0px 0px;
+  margin: 0;
+}
+#home p {
+  margin: 0;
+  padding: 0px 0px 32px 0px;
 }
 
 /* about */
@@ -96,6 +136,52 @@ article {
   width: 100%;
   margin: 0 auto;
   padding: 32px 0;
+}
+
+article h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 32px;
+}
+
+article section {
+  margin-bottom: 32px;
+}
+
+article section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+
+article section h3 {
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  position: relative;
+  margin: 32px 0px 8px 0px;
+  border-bottom: 2px solid #333;
+}
+
+article section h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #333;
+}
+
+article section p {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  padding: 0px 0px 8px 16px;
 }
 
 @media screen and (min-width: 768px) {
